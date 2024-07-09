@@ -10,10 +10,10 @@ public class UserInput {
 		Scanner scanner = new Scanner(System.in);
 //		Asking question 
 		System.out.println("What is your name buddy ");
-//	    taking user input as String data type with variable_Name (name)
+//taking user input as String data type with variable_Name (name)
 		String name = scanner.nextLine();
 		System.out.printf("Hello welcome to Amazon MR. %s \n", name);
-//		Asking the user to input their current state of mind
+//Asking the user to input their current state of mind
 		System.out.println("What is your current status ");
 		String status = scanner.nextLine();
 		System.out.println("Oh Nice to hear that, What is your age: ");
