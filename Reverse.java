@@ -1,18 +1,18 @@
+import java.util.Scanner;
+
 public class Reverse {
     public static void main(String[] args) {
-        String[] names = new String[5];
-        names[0] = "Sunil";
-        names[1] = "Anil";
-        names[2] = "kevin";
-        names[3] = "luthik";
-        names[4] = "prateek";
-        // names[5] = "Sunil";
-        for(int i=names.length-1;i>0;i--){
-            System.out.print(names[i]+", ");
-        }
-        System.out.println();
-        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the Sentence: ");
+        String GivenString = sc.nextLine();
 
+
+        String ReverseString = new String();
+        for (int i=GivenString.length()-1;i>=0;i--){
+            ReverseString = ReverseString + GivenString.charAt(i);
+            // System.out.println("Reversed: " + ReverseString);
+        }
+        System.out.println(ReverseString);
+        sc.close();
     }
-    
 }
